@@ -25,24 +25,26 @@ It provides a user-friendly interface and communicates in a ChatGPT-style bubble
 🛠️ Setup & Run
 1. Clone the repo
 
-    ``` git clone https://github.com/Saransh2412/Legalbot/tree/main ```
-    cd legalbot
+    ``` bash
+    git clone https://github.com/Saransh2412/Legalbot/tree/main 
+    cd legalbot 
 
 2. Install dependencies
-
+``` bash
     npm install
-
+```
 3. Add your Gemini API key
+``` bash
     Create a .env file in the root directory and add:
 
     VITE_GEMINI_API_KEY=your_api_key_here
-
+```
 4. Run the app locally
-
+``` bash
 npm run dev
 Then open: http://localhost:5173
 
-
+```
 🌐 Deployment
 You can deploy this app easily to any frontend hosting service:
 
