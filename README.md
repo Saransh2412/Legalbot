@@ -17,7 +17,7 @@ It provides a user-friendly interface and communicates in a ChatGPT-style bubble
 
 
 
-![LegalBot Screenshot](./legalbot-vite\Screenshot.png)
+![LegalBot Screenshot](Screenshot.png)
 
 
 
