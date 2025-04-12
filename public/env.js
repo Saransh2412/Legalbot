@@ -80,7 +80,6 @@ window.env = {
   "USERDOMAIN_ROAMINGPROFILE": "SARANSH",
   "USERNAME": "HP",
   "USERPROFILE": "C:\\Users\\HP",
-  "VITE_GEMINI_API_KEY": "AIzaSyDA3Drb0MKBQAoJDE_PMCucLY5J_kfdQ_8",
   "VSCODE_GIT_ASKPASS_EXTRA_ARGS": "",
   "VSCODE_GIT_ASKPASS_MAIN": "c:\\Users\\HP\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js",
   "VSCODE_GIT_ASKPASS_NODE": "C:\\Users\\HP\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
