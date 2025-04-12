@@ -1,36 +1,99 @@
-.app {
-  max-width: 600px;
-  margin: 50px auto;
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+/* Reset styles for full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Full height flex container */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Chat area fills available space */
+.chat-box {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+/* Bubbles */
+.bubble {
+  padding: 12px 16px;
+  border-radius: 16px;
+  max-width: 80%;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.user {
+  align-self: flex-end;
+  background-color: #0a84ff;
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+
+.bot {
+  align-self: flex-start;
+  background-color: #2c2c2c;
+  color: #f1f1f1;
+  border-bottom-left-radius: 4px;
+}
+
+/* Input area */
 textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 12px;
   font-size: 1em;
   resize: vertical;
+  border: none;
+  border-radius: 8px;
+  background-color: #121212;
+  color: #f5f5f5;
+  margin-top: auto;
 }
 
 button {
+  margin-top: 10px;
   padding: 10px 20px;
   font-size: 1em;
   cursor: pointer;
+  background-color: #0a84ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.2s;
 }
 
-.response {
-  margin-top: 20px;
-  background: #f9f9f9;
-  padding: 10px;
-  border-radius: 5px;
-  white-space: pre-wrap;
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #006ddf;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .disclaimer {
   font-size: 0.85em;
-  color: gray;
+  color: #aaa;
+  text-align: center;
   margin-top: 20px;
 }
